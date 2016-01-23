@@ -1,0 +1,26 @@
+{
+  "name": "maintenance-sparky-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "srart": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theHarvester/maintenance-sparky-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theHarvester/maintenance-sparky-website/issues"
+  },
+  "homepage": "https://github.com/theHarvester/maintenance-sparky-website#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "gulp-livereload": "^3.8.1"
+  }
+}
