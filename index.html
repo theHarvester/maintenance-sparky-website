@@ -57,7 +57,8 @@
                 <p class="lead copy">Real Estate - Body Corporate - Insurance</p>
 
                 <p class="lead">
-                    <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                    <a href="#about" class="btn btn-lg btn-default smooth-scroll">Learn more</a>
+                    <a href="#contact" class="btn btn-lg btn-default smooth-scroll">Contact Us</a>
                 </p>
             </div>
         </div>
@@ -152,8 +153,8 @@
 </section>
 
 <section id="testimonial-logos">
-    <div class="container-fluid container-pad-bottom container-pad-top">
-
+    <div class="container-fluid logo-bar">
+        <img src="images/rw-logo-white-transparent.png">
     </div>
 </section>
 
@@ -194,6 +195,16 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
+<script type="application/javascript">
+    $(document).ready(function () {
+        $('.smooth-scroll').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 1000, 'swing');
+            return false;
+        });
+    });
+</script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 </body>
