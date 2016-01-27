@@ -1,13 +1,13 @@
 /*
  * Globals
  */
-@base_blue:#0266C8;
-@base_blue_bright:#2380DB;
-//@base_blue:yellow;
+@base_blue: #0266C8;
+@base_blue_bright: #2380DB;
+//@base_blue:yellow;d
 //@base_blue_bright:yellow;
 //@bg_dark:#111;
-@bg_dark:#020202;
-@font_light:whitesmoke;
+@bg_dark: #020202;
+@font_light: whitesmoke;
 //@bg_dark:#151515;
 //@bg_dark:#242424;
 //@bg_dark:#373737;
@@ -20,13 +20,15 @@ a:hover {
 }
 
 .text-primary {
-  color:@base_blue;
+  color: @base_blue;
 }
+
 #services .glyphicon {
   font-size: 30px;
 }
+
 #services .icon-container {
-  width:70px;
+  width: 70px;
   padding-top: 18px;
   //padding-top: 18px;
 }
@@ -43,7 +45,7 @@ a:hover {
 
 #about h2 {
   font-family: 'Raleway', sans-serif;
-  color:@font_light;
+  color: @font_light;
   margin-bottom: 40px;
 }
 
@@ -53,7 +55,7 @@ a:hover {
 }
 
 #about ul {
-  margin-top:50px;
+  margin-top: 50px;
   font-size: 1.4em;
   font-weight: 100;
   list-style-type: square;
@@ -62,7 +64,7 @@ a:hover {
 }
 
 #about li {
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 .no-top-margin {
@@ -119,26 +121,24 @@ a:hover {
   letter-spacing: normal;
 }
 
-
 #quote .container-fluid {
   background: url('/images/clouds-cloudy-summer-building-cropped.jpg') no-repeat center; //fixed
-  background-size:cover;
+  background-size: cover;
   text-shadow: 2px 2px 10px rgba(50, 50, 50, 0.7);
-  //background-color: red;
 }
 
 #quote p.quote {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
-  color:@font_light;
+  color: @font_light;
 }
 
 #quote p.quoted {
-  margin-top:20px;
+  margin-top: 20px;
   letter-spacing: 2px;
   font-weight: 200;
   font-size: 1.7em;
-  color:@font_light;
+  color: @font_light;
 }
 
 #testimonial-logos {
@@ -147,7 +147,7 @@ a:hover {
 
 #contact {
   i {
-   font-size: 2em;
+    font-size: 2em;
   }
   h1 {
     font-family: 'Raleway', sans-serif;
@@ -168,10 +168,10 @@ a:hover {
     margin-bottom: 50px;
   }
   a {
-    color:#333;
+    color: #333;
   }
   a:hover {
-    color:#333;
+    color: #333;
     text-decoration: none;
     border-bottom: 1px solid @base_blue;
   }
@@ -195,20 +195,13 @@ a:hover {
   padding-top: 100px;
 }
 
-/*
- * Base structure
- */
-
 html,
 body {
   height: 100%;
-  //background-color: @bg_dark;
-  //background-color: red;
 }
+
 body {
-  //color: #fff;
   text-align: center;
-  //text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -217,15 +210,15 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  //-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-  //box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   background-color: @bg_dark;
   color: #fff;
 }
+
 .site-wrapper-inner {
   display: table-cell;
   vertical-align: top;
 }
+
 .cover-container {
   margin-right: auto;
   margin-left: auto;
@@ -236,52 +229,15 @@ body {
   padding: 30px;
 }
 
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
   }
+
   .masthead-nav {
     float: right;
   }
 }
-
 
 /*
  * Cover
@@ -291,16 +247,14 @@ body {
   padding: 0 20px;
 }
 
-
 /*
  * Footer
  */
 
 .mastfoot {
   color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, .5);
 }
-
 
 /*
  * Affix and center
@@ -312,14 +266,17 @@ body {
     position: fixed;
     top: 0;
   }
+
   .mastfoot {
     position: fixed;
     bottom: 0;
   }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
   }
+
   /* Handle the widths */
   .masthead,
   .mastfoot,
@@ -328,10 +285,40 @@ body {
   }
 }
 
+@media (max-width: 701px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    .cover-heading {
+      font-size: 40px;
+      span {
+        display: block;
+      }
+    }
+    width: 100%;
+    margin-top: 100px;
+  }
+  .tag-line {
+    font-size: 10px;
+  }
+  p {
+    font-size: 20px;
+  }
+  #services .icon-container {
+    width: 120px;
+  }
+}
+
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
   .cover-container {
     width: 700px;
+  }
+}
+
+@media (max-width: 772px) {
+  .col-sm-hidden {
+    display: none;
   }
 }
