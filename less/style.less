@@ -135,8 +135,8 @@ a:hover {
     li{
       margin-bottom: 5px;
     }
-    font-size: 18px;
-    font-weight: 200;
+    font-size: 1.5em;
+    //font-weight: 200;
   }
   color:white;
 }
@@ -177,7 +177,7 @@ a:hover {
     margin-bottom: 30px;
   }
   .tag-line {
-    font-weight: 200;
+    //font-weight: 200;
     letter-spacing: 1px;
     color: darkgray;
     font-style: italic;
@@ -185,9 +185,11 @@ a:hover {
     margin-bottom: 30px;
   }
   .detail {
-    font-weight: 200;
-    font-size: 1.5em;
-    letter-spacing: 1px;
+    @media (min-width: 700px){
+      font-weight: 200;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
     margin-bottom: 50px;
   }
   a {
@@ -314,7 +316,7 @@ body {
 
 #services {
   p {
-    font-size:18px;
+    font-size:1.3em;
   }
 }
 
@@ -341,6 +343,9 @@ body {
     .icon-container {
       width: 120px;
     }
+  }
+  #testimonial-logos {
+    display: none;
   }
 }
 
